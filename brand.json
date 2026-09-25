@@ -1,0 +1,53 @@
+{
+  "name": "Kontek (Visma HRM Sverige AB)",
+  "colors": {
+    "darkGreen": "053F22",
+    "mediumGreen": "0E5741",
+    "coral": "E8604C",
+    "coralLight": "FF8A76",
+    "lightBg": "EEF4F0",
+    "cardBorder": "D8E2DC",
+    "textBody": "333B36",
+    "textMuted": "5A6B62",
+    "white": "FFFFFF"
+  },
+  "fonts": {
+    "primary": "Calibri",
+    "note": "LibreOffice substitutes Carlito; visually equivalent"
+  },
+  "footerText": {
+    "brand": "kontek",
+    "suffix": "  |  Visma HRM Sverige AB"
+  },
+  "logo": {
+    "file": "brand/logo_0.png",
+    "placement": "lower right corner of slide footer",
+    "note": "Add the PNG to this repo. If missing, agents fall back to the text footer."
+  },
+  "slideLayout": {
+    "format": "LAYOUT_16x9",
+    "pageInches": { "w": 10.0, "h": 5.625 },
+    "title": { "x": 0.5, "y": 0.28, "w": 7.6, "h": 0.55, "size": 28, "bold": true, "color": "darkGreen" },
+    "subtitle": { "x": 0.5, "y": 0.82, "w": 7.8, "h": 0.35, "size": 12.5, "color": "textMuted" },
+    "mosaic": { "x": 8.85, "y": 0.32, "cell": 0.14 },
+    "cards": {
+      "y": 1.30, "h": 3.28,
+      "x": [0.5, 3.58, 6.66],
+      "w": [2.95, 2.95, 2.84],
+      "titleSize": 13,
+      "bodySize": 10.5,
+      "thirdCardStyle": "dark (darkGreen fill, white/E7EFEA text, coralLight labels)"
+    },
+    "noteBand": { "x": 0.5, "y": 4.72, "w": 9.0, "h": 0.52, "labelColor": "coral", "fill": "lightBg" },
+    "footer": { "x": 0.5, "y": 5.30, "size": 9 }
+  },
+  "docLayout": {
+    "pageMarginsDxa": { "top": 1080, "bottom": 1080, "left": 1180, "right": 1180 },
+    "topBar": "full-width darkGreen shaded paragraph",
+    "titleSizeHalfPt": 52,
+    "h1": { "sizeHalfPt": 28, "bottomBorder": "coral, 8/8pt, space 4" },
+    "bullets": "coral bullet glyphs, hanging indent 0.18in at 0.30in",
+    "callout": "single-cell table, lightBg fill, thick coral top border, thin cardBorder sides",
+    "footer": "kontek | Visma HRM Sverige AB left, page number right, thin cardBorder top rule"
+  }
+}
