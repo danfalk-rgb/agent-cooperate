@@ -1,0 +1,394 @@
+[
+  {
+    "title": "Anpassad bokföringsfil i Kontek Lön",
+    "subtitle": "Tilläggsmodulen Bokföringsfil – fildefinition: skapa egna textfiler utöver SIE4, anpassade efter mottagande ekonomisystem.",
+    "c1title": "Format & struktur",
+    "c1": [
+      {
+        "text": "CSV eller fasta fältlängder – du väljer format"
+      },
+      {
+        "text": "Fältavgränsare: komma, semikolon eller tabb"
+      },
+      {
+        "text": "Decimaltecken: inget, punkt eller komma"
+      },
+      {
+        "text": "Valfri rubrikrad i CSV-filer"
+      },
+      {
+        "text": "Fasta fältlängder: nollutfyllnad av numeriska fält"
+      },
+      {
+        "text": "Start- och sluttransaktioner konfigureras separat"
+      }
+    ],
+    "c2title": "Valbara fält",
+    "c2": [
+      {
+        "text": "Belopp, Debet eller Kredit"
+      },
+      {
+        "text": "Konto, Kostnadsställe, Projekt, Nivå 4"
+      },
+      {
+        "text": "Utbetalningsdag i fyra datumformat (t.ex. ÅÅÅÅ-MM-DD)"
+      },
+      {
+        "text": "Löneperiodens namn"
+      },
+      {
+        "text": "Fasta värden kan läggas till"
+      },
+      {
+        "text": "Fälten matas ut i den ordning du anger",
+        "bold": true
+      }
+    ],
+    "c3title": "Fyra dimensioner",
+    "c3": [
+      {
+        "text": "Dim 1 – Konto (fast, kan ej ändras)"
+      },
+      {
+        "text": "Dim 2 – Kostnadsställe"
+      },
+      {
+        "text": "Dim 3 – Projekt (Objekt)"
+      },
+      {
+        "text": "Dim 4 – Nivå 4"
+      },
+      {
+        "text": "Tips:",
+        "bold": true,
+        "color": "FF8A76",
+        "bullet": false
+      },
+      {
+        "text": "En ledig dimension kan i vissa fall användas för annat innehåll – för att möta mottagande systems krav."
+      }
+    ],
+    "noteLabel": "Bra att veta:",
+    "note": "Ingen egen logik kan byggas i Kontek Lön. Logik baserad på filens innehåll hanteras utanför lönesystemet – Kontek kan erbjuda detta som tjänst mot löpande kostnad.",
+    "notes": "Anpassade bokföringsfiler skapas via CSV-definition eller Fildefinition (samma funktion i grunden). Utöver SIE4 kan enklare textfiler skickas: CSV eller fasta fältlängder. Lyft att fälten matas ut i angiven ordning och att ingen egen logik kan byggas i KL – konvertering/logik sker utanför, ev. som tjänst från Kontek. Tips: en dimension som inte används kan i vissa fall återanvändas för att bära värden som mottagande system kräver."
+  },
+  {
+    "title": "Custom accounting files in Kontek Lön",
+    "subtitle": "Add-on module Accounting file – file definition: create your own text files beyond SIE4, tailored to the receiving finance system.",
+    "c1title": "Format & structure",
+    "c1": [
+      {
+        "text": "CSV or fixed field lengths – you choose the format"
+      },
+      {
+        "text": "Field delimiter: comma, semicolon or tab"
+      },
+      {
+        "text": "Decimal separator: none, point or comma"
+      },
+      {
+        "text": "Optional header row in CSV files"
+      },
+      {
+        "text": "Fixed lengths: zero-padding of numeric fields"
+      },
+      {
+        "text": "Start/end transactions configured separately"
+      }
+    ],
+    "c2title": "Selectable fields",
+    "c2": [
+      {
+        "text": "Amount, Debit or Credit"
+      },
+      {
+        "text": "Account, Cost centre, Project, Level 4"
+      },
+      {
+        "text": "Payment date in four date formats (e.g. YYYY-MM-DD)"
+      },
+      {
+        "text": "Payroll period name"
+      },
+      {
+        "text": "Fixed values can be added"
+      },
+      {
+        "text": "Fields are output in the order you define",
+        "bold": true
+      }
+    ],
+    "c3title": "Four dimensions",
+    "c3": [
+      {
+        "text": "Dim 1 – Account (fixed, cannot be changed)"
+      },
+      {
+        "text": "Dim 2 – Cost centre"
+      },
+      {
+        "text": "Dim 3 – Project (Object)"
+      },
+      {
+        "text": "Dim 4 – Level 4"
+      },
+      {
+        "text": "Tip:",
+        "bold": true,
+        "color": "FF8A76",
+        "bullet": false
+      },
+      {
+        "text": "An unused dimension can in some cases carry other content – to meet the receiving system's requirements."
+      }
+    ],
+    "noteLabel": "Good to know:",
+    "note": "No custom logic can be built inside Kontek Lön. Logic based on file content is handled outside the payroll system – Kontek can offer this as a service at an ongoing cost.",
+    "notes": "Custom accounting files are created via CSV definition or File definition (essentially the same feature). Beyond SIE4, simpler text files can be produced: CSV or fixed field lengths. Highlight that fields are output in the defined order and that no custom logic can be built in KL – conversion/logic happens outside, optionally as a Kontek service. Tip: a dimension not otherwise in use can in some cases be repurposed to carry values the receiving system requires."
+  },
+  {
+    "title": "Roadmap: Bokföring via API",
+    "subtitle": "Nästa steg – vi exponerar endpoints för bokföringsdata i vårt öppna API, som komplement till dagens filbaserade flöde.",
+    "c1title": "Vad vi öppnar upp",
+    "c1": [
+      {
+        "text": "Endpoints för bokföringsdata direkt från Kontek Lön"
+      },
+      {
+        "text": "Samma innehåll som i bokföringsfilen: konto, dimensioner, belopp och datum"
+      },
+      {
+        "text": "Hämtas via API-anrop i stället för filexport"
+      },
+      {
+        "text": "Standardiserat, dokumenterat gränssnitt"
+      }
+    ],
+    "c2title": "Vad det möjliggör",
+    "c2": [
+      {
+        "text": "System-till-system utan filhantering och FTP"
+      },
+      {
+        "text": "Mottagande system eller integrationsplattform bygger egen logik och format"
+      },
+      {
+        "text": "Snabbare och mer spårbart flöde till ekonomisystemet"
+      },
+      {
+        "text": "Mindre manuell hantering vid varje lönekörning"
+      }
+    ],
+    "c3title": "Från fil till API",
+    "c3": [
+      {
+        "text": "Idag:",
+        "bold": true,
+        "bullet": false,
+        "color": "FF8A76"
+      },
+      {
+        "text": "Bokföringsfil (SIE4, CSV eller fasta fältlängder) skapas i Kontek Lön"
+      },
+      {
+        "text": "Framåt:",
+        "bold": true,
+        "bullet": false,
+        "color": "FF8A76"
+      },
+      {
+        "text": "Bokföringsdata hämtas via endpoints – formatering och logik hanteras i integrationslagret"
+      },
+      {
+        "text": "Filbaserade flödet finns kvar som komplement"
+      }
+    ],
+    "noteLabel": "Preliminärt:",
+    "note": "Omfattning och tidplan enligt roadmap – stäm av aktuell status med produktteamet innan något utlovas mot kund.",
+    "notes": "Roadmap-slide på hög nivå: vi planerar att exponera endpoints för bokföringsdata i det öppna API:et. Poängen: samma data som i bokföringsfilen, men hämtad via API – vilket flyttar logik och formatering till integrationslagret och tar bort filhantering/FTP. Filflödet försvinner inte, API:et är ett komplement. Viktigt: tidplan och exakt omfattning är preliminära – verifiera med produktteamet innan kundlöften."
+  },
+  {
+    "title": "Roadmap: Accounting via API",
+    "subtitle": "Next step – we are exposing endpoints for accounting data in our open API, complementing today's file-based flow.",
+    "c1title": "What we are exposing",
+    "c1": [
+      {
+        "text": "Endpoints for accounting data straight from Kontek Lön"
+      },
+      {
+        "text": "Same content as the accounting file: account, dimensions, amounts and dates"
+      },
+      {
+        "text": "Retrieved via API calls instead of file export"
+      },
+      {
+        "text": "A standardised, documented interface"
+      }
+    ],
+    "c2title": "What it enables",
+    "c2": [
+      {
+        "text": "System-to-system without file handling and FTP"
+      },
+      {
+        "text": "Receiving system or integration platform builds its own logic and format"
+      },
+      {
+        "text": "A faster, more traceable flow into the finance system"
+      },
+      {
+        "text": "Less manual work at every payroll run"
+      }
+    ],
+    "c3title": "From file to API",
+    "c3": [
+      {
+        "text": "Today:",
+        "bold": true,
+        "bullet": false,
+        "color": "FF8A76"
+      },
+      {
+        "text": "Accounting file (SIE4, CSV or fixed field lengths) is created in Kontek Lön"
+      },
+      {
+        "text": "Going forward:",
+        "bold": true,
+        "bullet": false,
+        "color": "FF8A76"
+      },
+      {
+        "text": "Accounting data retrieved via endpoints – formatting and logic handled in the integration layer"
+      },
+      {
+        "text": "The file-based flow remains as a complement"
+      }
+    ],
+    "noteLabel": "Preliminary:",
+    "note": "Scope and timing per roadmap – verify current status with the product team before making customer commitments.",
+    "notes": "High-level roadmap slide: we plan to expose endpoints for accounting data in the open API. Key point: same data as the accounting file, but retrieved via API – moving logic and formatting to the integration layer and removing file handling/FTP. The file flow does not disappear; the API is a complement. Important: timing and exact scope are preliminary – verify with the product team before customer commitments."
+  },
+  {
+    "title": "Kompletterande möjligheter",
+    "subtitle": "Rapportgeneratorn för ytterligare data – och filleverans via FTPS.",
+    "c1title": "Rapportgeneratorn i Kontek Lön",
+    "c1": [
+      {
+        "text": "Komplement när bokföringsfilens fält inte räcker till"
+      },
+      {
+        "text": "Kompletterande fält eller annan typ av data"
+      },
+      {
+        "text": "Genereras i samband med fastställande av lön"
+      },
+      {
+        "text": "Egna rapportdefinitioner efter mottagarens behov"
+      },
+      {
+        "text": "Samma information kan även hämtas via Kontek Löns öppna API – på motsvarande sätt som med filer, men även i JSON-format",
+        "bold": true
+      }
+    ],
+    "c2title": "Filleverans via FTPS",
+    "c2": [
+      {
+        "text": "Filer kan placeras på en FTPS-server"
+      },
+      {
+        "text": "Vi kan tillhandahålla en FTPS-server ...",
+        "bold": true
+      },
+      {
+        "text": "... eller ansluta till er befintliga server",
+        "bold": true
+      },
+      {
+        "text": "Obs: SFTP stöds inte – Kontek Lön har inte nyckelbaserad autentisering"
+      }
+    ],
+    "c3title": "Att tänka på",
+    "c3": [
+      {
+        "text": "Speciallogik:",
+        "bold": true,
+        "bullet": false,
+        "color": "FF8A76"
+      },
+      {
+        "text": "Logik som t.ex. nollutfyllnad av andra fälttyper kan eventuellt inte lösas i Rapportgeneratorn"
+      },
+      {
+        "text": "Sådana behov behöver undersökas från fall till fall"
+      },
+      {
+        "text": "Stäm av med teknisk specialist innan lösningen utlovas"
+      }
+    ],
+    "noteLabel": "Sammanfattning:",
+    "note": "Bokföringsfil + Rapportgeneratorn täcker de flesta behov – leverans via FTPS, med Kontek eller kunden som värd för servern.",
+    "notes": "Rapportgeneratorn är komplementet när bokföringsfilens fält inte räcker: kompletterande fält eller annan data som genereras i samband med fastställande av lön. Filleverans: FTPS – vi kan stå för servern eller ansluta till kundens. Viktigt: SFTP stöds INTE (ingen nyckelbaserad autentisering i Kontek Lön). Caveat: kräver kunden logik som nollutfyllnad på andra fälttyper är det inte säkert att Rapportgeneratorn löser det – undersöks per fall innan något utlovas."
+  },
+  {
+    "title": "Complementary options",
+    "subtitle": "The report generator for additional data – and file delivery via FTPS.",
+    "c1title": "Report generator in Kontek Lön",
+    "c1": [
+      {
+        "text": "A complement when the accounting file's fields are not enough"
+      },
+      {
+        "text": "Complementary fields or other types of data"
+      },
+      {
+        "text": "Generated in connection with payroll finalisation"
+      },
+      {
+        "text": "Custom report definitions to match the receiver's needs"
+      },
+      {
+        "text": "The same information can also be retrieved via Kontek Lön's open API – just like the files, but also in JSON format",
+        "bold": true
+      }
+    ],
+    "c2title": "File delivery via FTPS",
+    "c2": [
+      {
+        "text": "Files can be placed on an FTPS server"
+      },
+      {
+        "text": "We can provide an FTPS server ...",
+        "bold": true
+      },
+      {
+        "text": "... or connect to your existing server",
+        "bold": true
+      },
+      {
+        "text": "Note: SFTP is not supported – Kontek Lön has no key-based authentication"
+      }
+    ],
+    "c3title": "Keep in mind",
+    "c3": [
+      {
+        "text": "Special logic:",
+        "bold": true,
+        "bullet": false,
+        "color": "FF8A76"
+      },
+      {
+        "text": "Logic such as zero-padding of other field types may not be solvable in the report generator"
+      },
+      {
+        "text": "Such needs must be investigated case by case"
+      },
+      {
+        "text": "Align with a technical specialist before committing to a solution"
+      }
+    ],
+    "noteLabel": "In short:",
+    "note": "Accounting file + report generator cover most needs – delivered via FTPS, with Kontek or the customer hosting the server.",
+    "notes": "The report generator is the complement when the accounting file's fields are not enough: complementary fields or other data generated in connection with payroll finalisation. File delivery: FTPS – we can host the server or connect to the customer's. Important: SFTP is NOT supported (no key-based authentication in Kontek Lön). Caveat: if the customer needs logic like zero-padding on other field types, the report generator may not solve it – investigate case by case before committing."
+  }
+]
